@@ -1,7 +1,10 @@
-body {
+body{
     background: #FFFDE7;
-}
+    font-family: "Scheherazade";
+    font-size: 20px;
+    color: black;
 
+}
 .page-navbar {
     z-index: 999;
     position: fixed;
@@ -40,47 +43,52 @@ body {
 }
 
 .page-navbar .nav-navbar .nav-item {
-    -webkit-box-flex: 1;
+    /* -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
+    -ms-flex-positive: 1; */
     flex-grow: 1;
     text-align: center;
-    -webkit-flex-basis: 0;
+    /* -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
-    flex-basis: 0;
+    flex-basis: 0; */
 }
 
 .page-navbar ul li a {
-    color: white;
+    color: wheat;
+    font-weight: bold;
 }
+.page-navbar ul li a:hover{
+  color: #A36E20;
+  background-color: wheat;
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px white;
+}
+
 
 .page-navbar .nav-navbar .nav-link img {
     margin-left: -3rem;
 }
-
-#py {
-    margin-top: 10rem;
+section{
+    margin-top: 5rem;
 }
-
-.card {
-    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
-}
-
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0, 0, 0, .125);
-    border-radius: 1rem;
-}
-
-.card-body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.5rem 1.5rem;
-}
+@media only screen and (min-width: 600px){
+    body::after {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+        top: 0;
+        content: url(https://checkout.optimizera.sa/ramadan_right.png);
+    }}
+    @media only screen and (min-width: 600px){
+    .site-header::after {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        content: url(https://checkout.optimizera.sa/ramadan_left.png);
+    }}

@@ -1,3 +1,10 @@
+body{
+    background: #FFFDE7;
+    font-family: "Scheherazade";
+    font-size: 20px;
+    color: black;
+
+}
 .page-navbar {
     z-index: 999;
     position: fixed;
@@ -36,120 +43,65 @@
 }
 
 .page-navbar .nav-navbar .nav-item {
-    -webkit-box-flex: 1;
+    /* -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
+    -ms-flex-positive: 1; */
     flex-grow: 1;
     text-align: center;
-    -webkit-flex-basis: 0;
+    /* -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
-    flex-basis: 0;
+    flex-basis: 0; */
 }
 
 .page-navbar ul li a {
-    color: white;
+    color: wheat;
+    font-weight: bold;
 }
+.page-navbar ul li a:hover{
+  color: #A36E20;
+  background-color: wheat;
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px white;
+}
+
 
 .page-navbar .nav-navbar .nav-link img {
     margin-left: -3rem;
 }
+#nav-title{
+    font-family: "Gulzar";
+    font-size: 2rem;
+color: black;
 
-/* 
 
-/** Our  project section **/
 
-.project {
-    background: #f9bf16;
-    /* margin-top: 90px; */
-    padding: 90px 0 90px 0;
 }
-
-.project .titlepage {
-    text-align: center;
-    padding-bottom: 60px;
+#blog{
+    margin-top: 150px;
 }
-
-.project .titlepage h2 {
-    color: #fff;
+#design{
+    text-decoration: none;
 }
-
-.project .titlepage p {
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: 400;
-    padding-top: 10px;
-    color: #fff;
-}
-
-.project .project_box {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.project .project_box figure {
-    margin: 0;
-    position: relative;
-    z-index: 999;
-}
-
-.project .project_box h3 {
-    color: #fff;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 22px 0px 0px 0px;
-}
-
-.margin_top1 {
-    margin-top: 87px;
-}
-
-/* .before_top::before {
-    position: absolute;
-    content: "";
-    width: 391px;
-    height: 46px;
-    top: -20px;
-    background-color: #0000ff;
-    /* background: url(../images/pro_after.jpg); */
-/* background-repeat: no-repeat;
-    left: -8px;
-    right: -8px;
-} */
-
-/* .before_bottom::before {
-    position: absolute;
-    content: "";
-    width: 391px;
-    height: 46px;
-    bottom: 80px;
-    background-color: #0000ff;
-    /* background: url(../images/pro_after.jpg); */
-/* background-repeat: no-repeat;
-    left: -8px;
-    right: -8px;
-}  */
-
-.project .read_more {
-    margin-top: 30px;
-    margin: 0 auto;
-    display: block;
-    border: #fff solid 2px;
-    color: #fff;
-    background: transparent;
-    padding: 9px 0;
-}
-
-/* .project .read_more:hover {
-    background-color: #0000ff;
-} */
-
-.marging_top4 {
-    margin-bottom: 20px !important;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+.foot{
+    color: #a36e20;}
+    @media only screen and (min-width: 600px){
+        body::after {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            top: 0;
+            content: url(https://checkout.optimizera.sa/ramadan_right.png);
+        }}
+        @media only screen and (min-width: 600px){
+        .site-header::after {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            content: url(https://checkout.optimizera.sa/ramadan_left.png);
+        }}
